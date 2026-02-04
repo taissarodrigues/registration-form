@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ff7978;
+  background-image: url("/src/img/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* cria duas colunas de igual largura  */
+
+
+.container{
+  width: 900px;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 125px;
+  align-items: center; 
+}
+
+.content{
+  color: #fff;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 46px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.content p {
+  font-size: 16px;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+form {
+  max-width: 505px;
+  min-height: 565px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+form input {
+  width: 425px;
+  padding: 14px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.form-header {
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #5d54a3;
+  text-align: center;
+   width: 100%;
+     padding: 10px;
+  border-radius: 5px;
+  /* margin-bottom: 20px; */
+  
+}
+.form-header p {
+  font-weight: 400; 
+}
+
+.form-header strong {
+  font-weight: 600; 
+}
+
+.form-box button {
+  padding: 14px 110px;
+  border-radius: 5px;
+  color: #fff;
+  background: #77e2b4;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  text-align: left;
+  margin-top: 20px;
+  color: #777777;
+}
+.terms a {
+  color: #fe514f;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+}
