@@ -129,6 +129,7 @@ form button:hover {
 }
 
 
+
 /* tamanho mobile  */
 @media (max-width: 768px) {
   body {
@@ -146,7 +147,4 @@ form button:hover {
   .form-box {
     width: 100%;
   }
-}
-
-  
 }
