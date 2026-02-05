@@ -20,7 +20,6 @@ body {
   align-items: center;
 }
 
-/* ===== CONTAINER ===== */
 .container {
   width: 100%;
   max-width: 1110px;
@@ -31,7 +30,6 @@ body {
   gap: 64px;
 }
 
-/* ===== TEXTO ===== */
 .content {
   max-width: 520px;
   color: #fff;
@@ -49,15 +47,14 @@ body {
   opacity: 0.9;
 }
 
-/* ===== FORM BOX ===== */
 .form-box {
   width: 505px;
 }
 
-/* HEADER ROXO */
 .form-header {
   background: #5d54a3;
   color: #fff;
+  box-shadow: 0 5px 0 #FE5756;
   text-align: center;
   padding: 16px;
   border-radius: 5px;
@@ -80,7 +77,7 @@ form {
   min-height: 565px;
 
   border-radius: 15px;
-  box-shadow: 5px 8px 0 rgba(255, 121, 120, 0.8);
+  box-shadow: 5px 8px 0px #FB010147;
 }
 
 form input {
@@ -103,8 +100,8 @@ form button {
   padding: 14px;
 
   border: none;
-  border-radius: 6px;
-  background: #77e2b4;
+  border-radius: 5px;
+  background: #77E2B4;
 
   color: #fff;
   font-size: 16px;
@@ -118,9 +115,9 @@ form button:hover {
 
 .terms {
   margin-top: 16px;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
-  color: #999;
+  color: #9D9D9D;
 }
 
 .terms a {
