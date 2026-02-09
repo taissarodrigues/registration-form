@@ -14,4 +14,7 @@ form.addEventListener("submit", (event) => {
         alert ("Por favor, preencha o seu nome");
         return;
     }
+
+      alert("Formulário enviado com sucesso!");
+
 });

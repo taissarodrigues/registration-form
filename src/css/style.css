@@ -85,17 +85,38 @@ form {
 form input {
   width: 100%;
   padding: 14px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 
   border-radius: 6px;
   border: 1px solid #3A3A3A;
   font-size: 16px;
+}
+.error-message {
+  color: #fe514f;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 6px;
+}
+form input:not(:placeholder-shown):invalid {
+  border-color: #fe514f;
+  background-color: #fff5f5;
+}
+form input:valid {
+    border-color: #5d54a3;
 }
 
 form input:focus {
   outline: none;
   border-color: #5d54a3;
 }
+
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
 
 form button {
   width: 100%;
