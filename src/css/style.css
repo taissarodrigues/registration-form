@@ -94,17 +94,30 @@ form input {
 .error-message {
   color: #fe514f;
   font-size: 12px;
-  text-align: right;
   margin-top: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
 }
-form input:not(:placeholder-shown):invalid {
-  border-color: #fe514f;
-  background-color: #fff5f5;
-}
-form input:valid {
-    border-color: #5d54a3;
+.error-icon {
+  width: 20px;
+  height: 20px;
 }
 
+/* estado de erro controlado via JS */
+.input-field.invalid input {
+  border-color: #fe514f;
+}
+
+/* estado válido */
+
+form input:valid {
+  border-color: #69ae80;
+}
+
+/* foco */
 form input:focus {
   outline: none;
   border-color: #5d54a3;
@@ -168,4 +181,8 @@ form button:hover {
   .form-box {
     width: 100%;
   }
+  .error-icon {
+  width: 16px;
+  height: 16px;
+ }
 }

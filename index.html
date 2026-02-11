@@ -22,41 +22,63 @@
         <div class="form-header">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-
-        <form id="form">
+        <!-- novalidate: atributo que impede o envio do formulário se houver campos inválidos, permitindo que a validação seja feita via js. -->
+        <form id="form" novalidate>
           <div class="input-field">
-            <input type="text" placeholder="First Name" id="name" required />
-            <div class="error-message">First Name cannot be empty</div>
-          </div>
-
-          <div class="input-field">
-            <input type="text" placeholder="Last Name" id="lastName" required />
-            <div class="error-message">Last Name cannot be empty</div>
+            <input
+              type="text"
+              id="name"
+              name="firstName"
+              class="form-control"
+              placeholder="First Name"
+              required
+            />
+            <span class="error-message"></span>
           </div>
 
           <div class="input-field">
             <input
               type="text"
-              placeholder="Email Address"
-              id="email"
+              id="lastName"
+              name="lastName"
+              class="form-control"
+              placeholder="Last Name"
               required
             />
-            <div class="error-message">Email cannot be empty</div>
+            <span class="error-message"></span>
+
           </div>
 
           <div class="input-field">
-            <input type="text" placeholder="Password" id="password" required />
-            <div class="error-message">Password cannot be empty</div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Email Address"
+              required
+            />
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-field">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Password"
+              required
+              minlength="6"
+            />
+
+            <span class="error-message"></span>
           </div>
 
           <button type="submit">CLAIM YOUR FREE TRIAL</button>
-
-          <p class="terms">
-            By clicking the button, you agree to our
-            <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
-          </p>
         </form>
       </div>
     </div>
+    <script src="/src/js/scrip.js" defer></script>
   </body>
 </html>
