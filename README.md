@@ -6,7 +6,6 @@ O projeto foi construído utilizando HTML, CSS e JavaScript puro, com foco em va
 <p align="center">
   <img width="1512" height="867" alt="Captura de Tela do Projeto" src="https://github.com/user-attachments/assets/c1e04994-545e-4ec8-9214-5a4e8ea95482" />
 </p>
->
 
 ## Características 
 
