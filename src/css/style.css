@@ -15,7 +15,7 @@ body {
   background-position: center;
   background-size: cover;
 
- padding: 75px 50px;
+  padding: 75px 50px;
 
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@ body {
 .form-header {
   background: #5d54a3;
   color: #fff;
-  box-shadow: 0 5px 0 #FE5756;
+  box-shadow: 0 5px 0 #fe5756;
   text-align: center;
   padding: 16px;
   border-radius: 5px;
@@ -79,22 +79,62 @@ form {
   min-height: 565px;
 
   border-radius: 15px;
-  box-shadow: 5px 8px 0px #FB010147;
+  box-shadow: 5px 8px 0px #fb010147;
 }
 
 form input {
   width: 100%;
   padding: 14px;
-  margin-bottom: 50px;
-
+  padding-right: 40px;
   border-radius: 6px;
-  border: 1px solid #3A3A3A;
+  border: 1px solid #3a3a3a;
   font-size: 16px;
+}
+.error-message {
+  color: #fe514f;
+  font-size: 12px;
+  margin-top: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.error-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-field.invalid input {
+  border-color: #fe514f;
+}
+
+.input-field.valid input {
+  border-color: #69ae80;
 }
 
 form input:focus {
   outline: none;
-  border-color: #5d54a3;
+  border-color: #5d54a3; }
+
+.input-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
 }
 
 form button {
@@ -103,7 +143,7 @@ form button {
 
   border: none;
   border-radius: 5px;
-  background: #77E2B4;
+  background: #77e2b4;
 
   color: #fff;
   font-size: 16px;
@@ -118,23 +158,23 @@ form button:hover {
 .terms {
   margin-top: 16px;
   font-size: 12px;
+  font-weight: 400;
   text-align: center;
-  color: #9D9D9D;
+  color: #d9d9d9;
 }
 
 .terms a {
   color: #fe514f;
-  font-weight: 12px;
+  font-weight: bold;
   text-decoration: none;
 }
-
 
 /* tamanho mobile  */
 @media (max-width: 768px) {
   body {
-    padding: 120px 21px; 
-  
-    display: block; 
+    padding: 120px 21px;
+
+    display: block;
   }
 
   .container {
@@ -142,11 +182,12 @@ form button:hover {
     gap: 64px;
     width: 100%;
   }
-  
+
   .form-box {
     width: 100%;
   }
-}
-
-  
+  .error-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
