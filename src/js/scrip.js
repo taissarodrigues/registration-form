@@ -30,11 +30,7 @@ function validateField(field) {
 
     inputField.classList.add("valid");
     return true;
-    
-    
 }
-
-
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 // verificar se todos os campos são válidos, enviar o formulario e mostrar a mensagem de sucesso
