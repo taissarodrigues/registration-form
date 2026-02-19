@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ff7978;
+  background-image: url("/src/img/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 75px 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.content {
+  max-width: 520px;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 46px;
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.form-box {
+  width: 505px;
+}
+
+.form-header {
+  background: #5d54a3;
+  color: #fff;
+  box-shadow: 0 5px 0 #fe5756;
+  text-align: center;
+  padding: 16px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+.form-header p {
+  font-size: 14px;
+}
+
+.form-header strong {
+  font-weight: 600;
+}
+
+form {
+  background: #fff;
+
+  padding: 40px 24px 24px;
+
+  min-height: 565px;
+
+  border-radius: 15px;
+  box-shadow: 5px 8px 0px #fb010147;
+}
+
+form input {
+  width: 100%;
+  padding: 14px;
+  padding-right: 40px;
+  border-radius: 6px;
+  border: 1px solid #3a3a3a;
+  font-size: 16px;
+}
+.error-message {
+  color: #fe514f;
+  font-size: 12px;
+  margin-top: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.error-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-field.invalid input {
+  border-color: #fe514f;
+}
+
+.input-field.valid input {
+  border-color: #69ae80;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #5d54a3; }
+
+.input-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 5px;
+  background: #77e2b4;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+.terms {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+.terms a {
+  color: #fe514f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* tamanho mobile  */
+@media (max-width: 768px) {
+  body {
+    padding: 120px 21px;
+
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+  .error-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
